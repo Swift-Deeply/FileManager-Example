@@ -16,9 +16,9 @@ class NoteManager {
             do {
                 let decoder = PropertyListDecoder()
                 let data = try Data(contentsOf: dataSourceURL)
-                let decodedReminders = try! decoder.decode([Note].self, from: data)
+                let decodedNotes = try! decoder.decode([Note].self, from: data)
                 
-                return decodedReminders
+                return decodedNotes
             } catch {
                 return []
             }
@@ -50,7 +50,6 @@ class NoteManager {
     
     func create(note: Note) {
         allNotes.insert(note, at: 0)
-        print(allNotes)
     }
     
     func setComplete(note: Note, index: Int) {

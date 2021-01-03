@@ -13,7 +13,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    var notes = [Note(title: "Talk with friends", description: "I need that!"), Note(title: "Have a shower.", description: "Today is very important day. Don't forget!"), Note(title: "Write an article", description: "This article must be about Swift."), Note(title: "Go to dentist.", description: "Atkını yanına almayı unutma.")]
+    var notes = [Note(title: "Talk with friends", description: "I need that!"), Note(title: "Have a shower.", description: "Today is very important day. Don't forget!"), Note(title: "Write an article", description: "This article must be about Swift."), Note(title: "Go to dentist.", description: "Don't forget your scarf.")]
     
     // MARK: - Functions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
